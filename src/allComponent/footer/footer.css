@@ -1,0 +1,108 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(54, 195, 241);
+    padding: 50px;
+}
+
+.footer i {
+    font-size: 20px;
+}
+
+.footer .iconInfo p {
+    width: 150px;
+}
+
+.footer .iconContact {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer .iconContact a {
+    margin: 0 7px;
+}
+
+.footer .iconInfo {
+    display: flex;
+    margin: 0 15px;
+}
+
+.footer .iconContact i {
+    font-size: 30px;
+    color: white;
+}
+
+.footer .iconContact a {
+    position: relative;
+    transition: 0.7s;
+    bottom: 0;
+}
+
+.footer .iconContact a:hover {
+    bottom: 15px;
+}
+
+.footer .iconInfo div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .iconInfo div i {
+    margin-bottom: 10px;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.footer .copyright p {
+    width: 100%;
+}
+
+.waves {
+    height: 230px;
+    position: relative;
+}
+
+.waves img {
+    height: 100%;
+    position: absolute;
+}
+
+.waves .wavesOne {
+    z-index: 3;
+    animation: animateWav 4s infinite linear;
+    width: 100%;
+}
+
+.waves .wavesTwo {
+    z-index: 2;
+    bottom: 30px;
+    opacity: .7;
+}
+
+.waves .wavesThree {
+    z-index: 1;
+    bottom: 59px;
+    opacity: 0.3;
+}
+
+@keyframes animateWave {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(1000px);
+    }
+}
+
+@media (max-width:767px) {
+    .footer {
+        width: 100%;
+    }
+}

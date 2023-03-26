@@ -1,0 +1,306 @@
+.skills {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 750px;
+}
+
+.title h2 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    margin-left: 20px;
+    color: rgb(0, 87, 134);
+}
+
+.PRINCIPAL {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-image: url(../images/loptop-bg.jpg);*/
+    background-image: linear-gradient(140deg, #EADEDB 0%, rgb(0, 166, 255) 50%, #BC70A4 75%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transparent {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.303);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 400px;
+    width: 500px;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.glass h2 {
+    color: black;
+    font-size: 24px;
+}
+
+.divAllImage {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    top: 75px;
+    animation: move-divAllImage 40s linear infinite;
+    right: 77px;
+}
+
+@keyframes move-divAllImage {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+.displayPart {
+    width: 50%;
+}
+
+.allSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imagePrincipal {
+    animation: move-principal 10s linear infinite;
+}
+
+.allSkills>div {
+    cursor: pointer;
+}
+
+.allSkills .principal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes move-principal {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.allSkills .principal>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 2px rgb(0, 166, 255);
+    background-color: white;
+    text-align: center;
+}
+
+.allSkills .principal div {
+    position: absolute;
+}
+
+.allSkills .principal div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.allSkills .js img {
+    position: relative;
+    animation: move-icon 4s linear infinite;
+}
+
+.allSkills .react img {
+    position: relative;
+    animation: move-icon 4s linear infinite;
+}
+
+.allSkills .css img {
+    position: relative;
+    animation: move-icon 4s linear infinite;
+}
+
+.allSkills .html img {
+    position: relative;
+    animation: move-icon 4s linear infinite;
+}
+
+@keyframes move-icon {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.allSkills .js {
+    bottom: 343px;
+    left: 125px;
+}
+
+.allSkills .react {
+    bottom: 113px;
+    left: 351px;
+}
+
+.allSkills .css {
+    bottom: 117px;
+    left: -95px;
+}
+
+.allSkills .html {
+    bottom: -99px;
+    left: 131px;
+}
+
+.Hidden {
+    display: none;
+}
+
+.perImage {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    height: 150px;
+}
+
+@keyframes move-perImage {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.perImage img:first-child {
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    animation: move-perImage 4s linear;
+}
+
+.perImage img:nth-child(2) {
+    width: 220px;
+    height: 220px;
+}
+
+.skillsButton {
+    position: absolute;
+    bottom: 125px;
+    z-index: 10;
+}
+
+.allSkills button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: Capitalize;
+    box-shadow: 0 15px 18px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width:767px) {
+    .PRINCIPAL {
+        margin-top: -127px;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        height: fit-content;
+    }
+    .allSkills {
+        margin-top: 23px;
+    }
+    .glass {
+        height: 400px;
+        width: 250px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .allSkills {
+        width: 50%;
+        margin: 75px 0px;
+    }
+    .allSkills .principal {
+        width: 200px;
+        height: 200px;
+    }
+    .allSkills .principal>p {
+        width: 200px;
+    }
+    .allSkills button {
+        font-size: 13px;
+        margin: 4px 5px;
+    }
+    .displayPart {
+        width: 100%;
+    }
+    .title h2 {
+        font-size: 2em;
+    }
+    .allSkills .principal div img {
+        width: 66px;
+        height: 66px;
+    }
+    .divAllImage {
+        width: 198px;
+        height: 200px;
+        top: 1px;
+        animation: move-divAllImag 40s linear infinite;
+        right: 1px;
+    }
+    .allSkills .react {
+        bottom: 63px;
+        left: 199px;
+    }
+    .allSkills .css {
+        bottom: 81px;
+        left: -62px;
+    }
+    .allSkills .html {
+        bottom: -67px;
+        left: 69px;
+    }
+    .allSkills .js {
+        bottom: 193px;
+        left: 71px;
+    }
+}

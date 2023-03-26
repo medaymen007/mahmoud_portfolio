@@ -1,0 +1,63 @@
+            /*Start Global Rules*/
+            
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            button {
+                cursor: pointer;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            /*we take the font of site from google font and it change every time we have new site*/
+            
+            body {
+                font-family: 'Cairo', sans-serif;
+            }
+            
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            /*this code for the size of all screen*/
+            
+            @media (min-width: 768px) {
+                .container {
+                    width: 750px;
+                }
+            }
+            /*Medium */
+            
+            @media (min-width: 992px) {
+                .container {
+                    width: 970px;
+                }
+            }
+            /*-Large- */
+            
+            @media (min-width: 1200px) {
+                .container {
+                    width: 1170px;
+                }
+            }
+            /*container*/
+            
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /*end global rules*/

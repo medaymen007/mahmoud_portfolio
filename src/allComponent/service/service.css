@@ -1,0 +1,120 @@
+.service {
+    margin-top: 200px;
+    background-image: url(../images/background-two.png);
+    background-repeat: no-repeat;
+    background-size: 50% 120%;
+    background-position: 30% 50%;
+}
+
+.service .container {
+    display: flex;
+}
+
+.service .partiOne h2 {
+    font-size: 50px;
+    color: rgb(0, 166, 255);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.service .partiOne p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.service button {
+    background: linear-gradient(180deg, rgb(87, 196, 255) 26.71%, rgb(0, 166, 255) 99.36%);
+    box-shadow: 0px 20px 24px 3px rgb(43, 181, 255);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 11px 26px 11px 26px;
+    outline: none;
+}
+
+.service button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid rgb(0, 166, 255);
+    color: rgb(0, 166, 255);
+}
+
+.service .partiTwo {
+    display: flex;
+    align-items: center;
+}
+
+.service .dev,
+.service .design,
+.service .ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: rgb(0, 166, 255) 5px solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.service .dev {
+    position: relative;
+    top: 20px;
+    right: 30px;
+}
+
+.service .design {
+    position: relative;
+    left: 40px;
+}
+
+.service .ui {
+    position: relative;
+    top: 20px;
+}
+
+.service i {
+    font-size: 40px;
+}
+
+.service .Pspe {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    .service {
+        margin-top: 50px;
+    }
+    .service .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .service .partiTwo {
+        margin-top: 20px;
+    }
+    .service .dev,
+    .service .design,
+    .service .ui {
+        border-radius: 20px;
+        padding: 10px;
+        width: 150px;
+        height: fit-content;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .service .design {
+        position: relative;
+        left: 20px;
+    }
+    .service .dev {
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+}

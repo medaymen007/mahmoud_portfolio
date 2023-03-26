@@ -1,0 +1,87 @@
+.fixBar {
+    position: fixed;
+    right: 0;
+    top: 44%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.fixBar>div {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    border-bottom: 1px solid rgb(0, 166, 255);
+    position: relative;
+    right: -151px;
+    transition-duration: .5s;
+    color: #3d535f;
+}
+
+.fixBar .linkedin:hover {
+    right: 0;
+    color: rgb(0, 166, 255);
+}
+
+.fixBar .linkedin:hover a {
+    color: rgb(0, 166, 255);
+}
+
+.fixBar .Email:hover {
+    right: 0px;
+    color: rgb(0, 166, 255);
+}
+
+.fixBar .Email:hover a {
+    color: rgb(0, 166, 255);
+}
+
+.fixBar .github:hover {
+    right: 0px;
+    color: rgb(0, 166, 255);
+}
+
+.fixBar .github:hover a {
+    color: rgb(0, 166, 255);
+}
+
+.fixBar div a {
+    text-decoration: none;
+    color: #3d535f;
+}
+
+.fixBar div a i {
+    margin-right: 10px;
+    display: flex;
+    font-size: 30px;
+}
+
+.fixBar p {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.fixBar .linkedin .space {
+    margin-right: 13px;
+}
+
+.fixBar .Email .space {
+    margin-right: 23px;
+}
+
+.fixBar .github .space {
+    margin-right: 28px;
+}
+
+@media(max-width:767px) {
+    .fixBar {
+        display: none;
+    }
+<<<<<<< HEAD
+}
+
+=======
+}
+>>>>>>> f315891 (uplode)

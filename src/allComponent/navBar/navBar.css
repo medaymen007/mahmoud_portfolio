@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+.navBar {
+    height: 80px;
+    background-color: #f3f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar .icons {
+    display: flex;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.logo::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 166, 255);
+    right: -12px;
+    bottom: 9px;
+}
+
+.navBar .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar .links a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 15px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.navBar .links a:hover {
+    color: rgb(0, 166, 255);
+}
+
+.navBar .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar .icons a {
+    margin-right: 7px;
+}
+
+.navBar .icons a i {
+    font-size: 20px;
+    color: #3d535f;
+}
+
+.navBar .icons a i:hover {
+    color: rgb(0, 166, 255);
+}
+
+@media (max-width:767px) {
+    .navBar {
+        height: 80px;
+        width: 90%;
+        margin-left: 17px;
+        position: fixed;
+        bottom: 20px;
+        border-radius: 56px;
+        box-shadow: 0px 0px 20px 0px #888888;
+        z-index: 11;
+    }
+    .navBar .btnBars i {
+        font-size: 20px;
+        color: #3d535f;
+    }
+    .navBar .container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .navBar .icons,
+    .navBar .links {
+        display: none;
+    }
+    .logo {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .logo::after {
+        bottom: 5px
+    }
+    .btnSection {
+        cursor: pointer;
+        background-color: white;
+        position: fixed;
+        bottom: 55px;
+        right: 19px;
+        padding: 10px;
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px #888888;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .btnSection .partiOne,
+    .btnSection .partiTwo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btnSection .partiOne div,
+    .btnSection .partiTwo div {
+        margin: 15px;
+        color: #888888;
+    }
+    .btnSection .partiOne div:hover,
+    .btnSection .partiTwo div:hover {
+        color: black;
+    }
+    .btnSection i {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .btnSection p {
+        font-size: 13px;
+    }
+    .cls {
+        display: none;
+    }
+}
+
+@media(width>767px) {
+    .btnBars {
+        display: none;
+    }
+}
